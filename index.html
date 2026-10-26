@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wayne | Personal Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f9f9f9',
+                            100: '#f1f1f1',
+                            400: '#a3a3a3',
+                            800: '#262626',
+                            900: '#171717',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased selection:bg-brand-900 selection:text-white">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 z-50 bg-[#FAFAFA]/80 backdrop-blur-md border-b border-gray-200/50">
+        <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+            <a href="#home" class="text-xl font-semibold tracking-tight text-brand-900">Enyaw.</a>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-brand-400">
+                <a href="#about" class="nav-link hover:text-brand-900 transition-colors">About</a>
+                <a href="#projects" class="nav-link hover:text-brand-900 transition-colors">Projects</a>
+                <a href="#achievements" class="nav-link hover:text-brand-900 transition-colors">Achievements</a>
+                <a href="#contact" class="nav-link hover:text-brand-900 transition-colors">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button class="md:hidden text-brand-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-linejoin="miter" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center pt-20 px-6">
+        <div class="max-w-6xl mx-auto w-full">
+            <div class="max-w-3xl reveal">
+                <p class="text-brand-400 font-medium mb-4 tracking-wide uppercase text-sm">Portfolio 2026</p>
+                <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.1] mb-6 text-brand-900">
+                    Designing logic.<br>
+                    Building simplicity.
+                </h1>
+                <p class="text-lg md:text-xl text-brand-400 leading-relaxed mb-10 max-w-2xl font-light">
+                    Hi, I'm Wayne. A BSIT Student in PUP focusing on functional, minimalist, and detail-oriented digital experiences.
+                </p>
+                <a href="#projects" class="inline-flex items-center space-x-2 text-brand-900 font-medium pb-1 border-b border-brand-900 hover:text-brand-400 hover:border-brand-400 transition-colors">
+                    <span>View my work</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-32 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-4 reveal">
+                    <h2 class="text-xs font-semibold tracking-widest text-brand-400 uppercase mb-4">About Me</h2>
+                    <h3 class="text-3xl font-bold tracking-tight text-brand-900">The person behind the code.</h3>
+                </div>
+                <div class="md:col-span-8 reveal delay-100">
+                    <div class="prose prose-lg text-brand-400 font-light leading-relaxed">
+                        <p class="mb-6 text-brand-900 font-normal">
+                            I am a BSIT student and a passionate developer. 
+                        </p>
+                        <p class="mb-6">
+                            My approach to development is rooted in a deep passion for detail-oriented problem solving. I believe that the best solutions are often the simplest, requiring rigorous refinement and a keen eye for the underlying architecture. I strive to write code that is not only functional but clean, scalable, and elegant.
+                        </p>
+                        <p>
+                            When I step away from the keyboard, my pursuits remain largely creative and tactical. You'll often find me meticulously curious and exploring new ideas. I don't stop learning, and I am always seeking to expand my skill set, whether through formal education, personal projects, or collaborative endeavors.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="mb-16 reveal">
+                <h2 class="text-xs font-semibold tracking-widest text-brand-400 uppercase mb-4">02. Selected Work</h2>
+                <h3 class="text-3xl font-bold tracking-tight text-brand-900">Recent Projects</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="group block cursor-pointer reveal delay-100">
+                    <div class="bg-white border border-gray-200 aspect-video flex items-center justify-center mb-6 overflow-hidden relative">
+                        <div class="w-full h-full bg-brand-50 flex flex-col items-center justify-center p-8 text-center transition-transform duration-700 group-hover:scale-105">
+                            <div class="w-16 h-16 border-2 border-brand-900 rounded-full mb-4 opacity-20"></div>
+                            <div class="w-3/4 h-2 bg-brand-400/20 mb-2 rounded"></div>
+                            <div class="w-1/2 h-2 bg-brand-400/20 rounded"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-center justify-between mb-2">
+                            <h4 class="text-xl font-semibold text-brand-900">Student Records Management System</h4>
+                            <span class="text-sm font-mono text-brand-400">2025</span>
+                        </div>
+                        <p class="text-brand-400 font-light mb-4">A comprehensive, secure system for academic institutions to digitally manage, track, and archive student data efficiently.</p>
+                        <ul class="flex flex-wrap gap-3 text-xs font-medium text-brand-800">
+                            <li class="px-3 py-1 bg-gray-100 rounded-full">PHP</li>
+                            <li class="px-3 py-1 bg-gray-100 rounded-full">MySQL</li>
+                            <li class="px-3 py-1 bg-gray-100 rounded-full">HTML</li>
+                            <li class="px-3 py-1 bg-gray-100 rounded-full">CSS</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Empty state/Placeholder -->
+                <div class="group block border-t border-gray-200 pt-8 reveal delay-200 flex flex-col justify-center items-start">
+                    <h4 class="text-2xl font-light text-brand-400 mb-2">More projects currently in development.</h4>
+                    <p class="text-brand-400 font-light mb-6">Continuously building and refining new digital tools.</p>
+                    <a href="https://github.com/Wayne-Aguio" target="_blank" class="text-sm font-medium text-brand-900 underline underline-offset-4 hover:text-brand-400 transition-colors">View GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-32 px-6 bg-brand-900 text-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-12 gap-12">
+                <div class="md:col-span-4 reveal">
+                    <h2 class="text-xs font-semibold tracking-widest text-brand-400 uppercase mb-4">03. Milestones</h2>
+                    <h3 class="text-3xl font-bold tracking-tight">Achievements & Certifications</h3>
+                </div>
+                
+                <div class="md:col-span-8">
+                    <div class="space-y-0 border-t border-brand-800">
+                        
+                        <!-- Achievement 1 -->
+                        <div class="py-8 border-b border-brand-800 flex flex-col md:flex-row md:items-center justify-between gap-4 reveal">
+                            <div>
+                                <h4 class="text-xl font-medium mb-1">IBM Introduction to Cloud Computing</h4>
+                                <p class="text-brand-400 font-light text-sm">A course on cognitiveclass.ai. Powered by IBM Developer Skills Network.</p>
+                            </div>
+                            <div class="text-brand-400 font-mono text-sm shrink-0">
+                                Completed
+                            </div>
+                        </div>
+
+                        <div class="py-8 border-b border-brand-800 flex flex-col md:flex-row md:items-center justify-between gap-4 reveal delay-100">
+                            <div>
+                                <h4 class="text-xl font-medium mb-1">Participated at GDG PLM Hackathon</h4>
+                                <p class="text-brand-400 font-light text-sm">First Hackathon that i've participated in.</p>
+                            </div>
+                            <div class="text-brand-400 font-mono text-sm shrink-0">
+                                Completed
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-32 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <div class="max-w-2xl mx-auto reveal">
+                <h2 class="text-xs font-semibold tracking-widest text-brand-400 uppercase mb-4">04. What's Next?</h2>
+                <h3 class="text-4xl md:text-5xl font-bold tracking-tight text-brand-900 mb-6">Get In Touch</h3>
+                <p class="text-brand-400 font-light text-lg mb-10">
+                    Whether you have a question about a project, a potential opportunity, or just want to say hi, my inbox is always open. Let's build something minimal and functional together.
+                </p>
+                <a href="mailto:wj1507398@gmail.com" class="inline-block bg-brand-900 text-white px-8 py-4 font-medium hover:bg-brand-800 transition-colors rounded-sm">
+                    Say Hello
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-gray-200 bg-white">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-brand-400 text-sm font-light">
+                &copy; <span id="year"></span> Enyaw. Built with HTML & Tailwind CSS.
+            </p>
+            <div class="flex space-x-6 text-sm">
+                <a href="https://github.com/Wayne-Aguio" target="_blank" class="text-brand-400 hover:text-brand-900 transition-colors">GitHub</a>
+                <a href="https://www.linkedin.com/in/wayne-aguio" target="_blank" class="text-brand-400 hover:text-brand-900 transition-colors">LinkedIn</a>
+                <a href="https://www.facebook.com/enyawxd/" target="_blank" class="text-brand-400 hover:text-brand-900 transition-colors">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
