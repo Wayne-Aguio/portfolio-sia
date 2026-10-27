@@ -28,11 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
         title: "3rd Year BSIT Student",
         org: "Polytechnic University of the Philippines",
         email: "wj1507398@gmail.com",
-        phone: "+639000000000", // Update with your actual phone number if desired
+        phone: "+639000000000",
         url: window.location.href.split('#')[0] + "#card"
     };
 
-    // Function to generate and download the vCard (.vcf) file
     function downloadVCard() {
         const vcardData = [
             "BEGIN:VCARD",
@@ -57,21 +56,24 @@ document.addEventListener('DOMContentLoaded', () => {
         document.body.removeChild(link);
     }
 
-    // Attach event listener to download button
     const downloadBtn = document.getElementById('download-vcard-btn');
     if (downloadBtn) {
         downloadBtn.addEventListener('click', downloadVCard);
     }
 
-    // Auto-trigger download if someone loaded the page via a specific hash/query (simulating auto-download on QR scan if hosted live)
     if (window.location.hash === '#download-card') {
         setTimeout(downloadVCard, 600);
     }
 
-    // Generate QR Code that directs users to the portfolio card page with an auto-download trigger
+    // Direct QR code rendering using a stable API with guaranteed HTTPS support
     const qrTargetUrl = encodeURIComponent(contactInfo.url + '#download-card');
     const qrImg = document.getElementById('qr-code');
     if (qrImg) {
         qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=${qrTargetUrl}`;
+        
+        // Fallback check if image fails to load for any network/adblock reason
+        qrImg.onerror = function() {
+            this.src = `https://quickchart.io/qr?text=${qrTargetUrl}&size=180`;
+        };
     }
 });
