@@ -14,12 +14,12 @@ body {
     transform: translateY(0);
 }
 
-/* Staggered animation delays for lists/grids */
+
 .delay-100 { transition-delay: 100ms; }
 .delay-200 { transition-delay: 200ms; }
 .delay-300 { transition-delay: 300ms; }
 
-/* Minimalist Scrollbar */
+
 ::-webkit-scrollbar {
     width: 8px;
 }
@@ -34,7 +34,6 @@ body {
     background: #a3a3a3;
 }
 
-/* Subtle link hover */
 .nav-link {
     position: relative;
 }
