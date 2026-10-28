@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         title: "3rd Year BSIT Student",
         org: "Polytechnic University of the Philippines",
         email: "wj1507398@gmail.com",
-        phone: "+639000000000",
+        phone: "+639628812796",
         url: window.location.href.split('#')[0] + "#card"
     };
 
